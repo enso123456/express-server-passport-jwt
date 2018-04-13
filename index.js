@@ -9,7 +9,8 @@ const router = require("./router");
 
 //DB SETUP
 const mongoURI = `mongodb://root:root@ds127731.mlab.com:27731/users`;
-mongoose.connect(mongoURI, function(err) {
+const localMongo = "mongodb://localhost/users";
+mongoose.connect(localMongo, function(err) {
   if (err) {
     return console.log("Error connecting to database");
   }
