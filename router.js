@@ -9,7 +9,7 @@ const requireSignin = passport.authenticate("local", {session: false})
 
 module.exports = function(app) {
   app.get("/", requireAuth, function(req, res) {
-    res.send("hello world")
+    res.send({ message: 'Advanced React Redux: Server - Client Auth Scaffolding'})
   })
   app.post("/signin", requireSignin, Authenticate.signin)
   app.post("/signup", Authenticate.signup)
