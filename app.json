@@ -1,0 +1,7 @@
+{
+  "name": "Node.JS Server App",
+  "description": "An Express Auth Simple Authentication",
+  "repository": "https://github.com/enso123456/express-server-passport-jwt",
+  "keywords": ["node", "express", "heroku"],
+  "image": "heroku/nodejs"
+}

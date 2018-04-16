@@ -8,7 +8,7 @@ const requireAuth = passport.authenticate("jwt", {session: false})
 const requireSignin = passport.authenticate("local", {session: false})
 
 module.exports = function(app) {
-  app.get("/", requireAuth, function(req, res) {
+  app.get("/", function(req, res) {
     res.send({ message: 'Advanced React Redux: Server - Client Auth Scaffolding'})
   })
   app.post("/signin", requireSignin, Authenticate.signin)
