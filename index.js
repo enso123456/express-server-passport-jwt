@@ -6,11 +6,12 @@ const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
 const router = require("./router");
+var dotenv = require('dotenv');
 
 //DB SETUP
-const mongoURI = `mongodb://root:root@ds127731.mlab.com:27731/users`;
-const localMongo = "mongodb://localhost/users";
-mongoose.connect(localMongo, function(err) {
+dotenv.load();
+const mongoURI = process.env.MONGO_DB;
+mongoose.connect(mongoURI, function(err) {
   if (err) {
     return console.log("Error connecting to database");
   }
