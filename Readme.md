@@ -1,6 +1,6 @@
 This source code is a scaffolding of a express-passport-module
 
-##To run in development mode
+## To run in development mode
 * `npm run dev`
 
 ## Mongo Credentials
