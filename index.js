@@ -8,8 +8,9 @@ const cors = require("cors");
 const router = require("./router");
 var dotenv = require('dotenv');
 
-//DB SETUP
 dotenv.load();
+
+//DB SETUP
 const mongoURI = process.env.MONGO_DB;
 mongoose.connect(mongoURI, function(err) {
   if (err) {

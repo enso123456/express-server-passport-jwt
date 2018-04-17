@@ -1,15 +1,17 @@
-Run server api
-`npm run dev`
+This source code is a scaffolding of a express-passport-module
 
-Create to admin in mongo and make create connection
-> `use admin`
->`switched to db admin`
->`db.createUser(
+##To run in development mode
+* `npm run dev`
+
+## Mongo Credentials
+* `use admin`
+* `switched to db admin`
+* `db.createUser(
   {
     user: "root123",
     pwd: "abc123",
     roles: [ { role: "userAdminAnyDatabase", db: "admin" } ]
   }
 )`
-> `db.auth("root123", "abc123" )`
+* `db.auth("root123", "abc123" )`
 
